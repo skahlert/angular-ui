@@ -7,6 +7,7 @@ angular.module('ui.directives').directive('uiSortable', [
   'ui.config', function(uiConfig) {
     return {
       require: '?ngModel',
+      scope:'true',
       link: function(scope, element, attrs, ngModel) {
         var onReceive, onRemove, onStart, onUpdate, opts, _receive, _remove, _start, _update;
 
